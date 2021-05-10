@@ -1,0 +1,51 @@
+mov ah, 0x0e
+mov al, 'H'
+int 0x10
+
+mov ah, 0x0e
+mov al, 'e'
+int 0x10
+
+mov ah, 0x0e
+mov al, 'l'
+int 0x10
+
+mov ah, 0x0e
+mov al, 'l'
+int 0x10
+
+mov ah, 0x0e
+mov al, 'o'
+int 0x10
+
+mov ah, 0x0e
+mov al, ' '
+int 0x10
+
+mov ah, 0x0e
+mov al, 'W'
+int 0x10
+
+mov ah, 0x0e
+mov al, 'o'
+int 0x10
+
+mov ah, 0x0e
+mov al, 'r'
+int 0x10
+
+mov ah, 0x0e
+mov al, 'l'
+int 0x10
+
+mov ah, 0x0e
+mov al, 'd'
+int 0x10
+
+mov ah, 0x0e
+mov al, '!'
+int 0x10
+
+jmp $
+times 510-($-$$) db 0
+db 0x55, 0xaa
